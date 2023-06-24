@@ -1,4 +1,4 @@
-import { SideNav } from "@/components";
+import { IndexContent, SideNav } from "@/components";
 import { getPostContent, getPostMetadata } from "@/scripts/helperPost";
 import parseDate from "@/scripts/parseDate";
 import Markdown from "markdown-to-jsx";
@@ -23,7 +23,7 @@ export default function page({ params }: Props) {
             </span>
           </div>
           <div className="flex gap-4">
-            <div className="w-[20%]">contentlist</div>
+            <IndexContent slug={params.slug}/>
             <Markdown
               options={{ forceBlock: true }}
               className="article p-6 w-[60%]"

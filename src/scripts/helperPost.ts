@@ -26,3 +26,11 @@ export function getPostContent(slug: string) {
   const matterResult = matter(content);
   return matterResult;
 }
+
+export function getPostLinks(slug: string) {
+  const file = `${postFolder}/${slug}.md`
+  const contentFile = fs.readFileSync(file, 'utf8')
+  const matterResult = matter(contentFile)
+  const filterLinks = matterResult.content.matchAll(/###/g) 
+  console.log(filterLinks)
+}

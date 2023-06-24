@@ -56,8 +56,7 @@ sudo dnf install -y neovim python3-neovim
 
 ### Telescope.nvim
 
-[ Telescope.nvim ]('https://github.com/nvim-telescope/telescope.nvim')
-
+[ Telescope.nvim ]('https://github.com/nvim-telescope/telescope.nvim') its an amazing plugin that allows you to move between your projects files in supersonic speed.
 
 
 
