@@ -15,15 +15,15 @@ export default function PostCard({ post }: Props) {
         alt="thumbnail"
         className="w-auto h-auto rounded-s"
       />
+      <span className="text-sm align-bottom text-[#6BAFC6]">
+        {parseDate(post.date)}
+      </span>
       <h3 className="pt-2 text-xl font-bold">{post.title}</h3>
       <p className="py-2">{post.subtitle}</p>
       <div className="flex justify-between items-center my-2">
         <p className="flex items-center gap-1">
           Read more <AiOutlineArrowRight />
         </p>
-        <span className="text-sm align-bottom text-[#6BAFC6]">
-          {parseDate(post.date)}
-        </span>
       </div>
     </Link>
   );

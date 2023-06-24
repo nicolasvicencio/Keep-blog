@@ -36,7 +36,7 @@ export default function PostFeed({}: Props) {
                 <img
                   src={post.thumbnail}
                   alt="post thumbnail"
-                  className="h-36"
+                  className="h-36 rounded-md"
                 />
               </Link>
             );
