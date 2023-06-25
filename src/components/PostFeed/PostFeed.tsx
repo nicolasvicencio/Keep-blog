@@ -32,6 +32,7 @@ export default function PostFeed({}: Props) {
                     <span className="text-xs">{parseDate(post.date)}</span>
                   </div>
                   <h3 className="text-lg">{post.title}</h3>
+                  <p className="text-gray-700">{post.subtitle}</p>
                 </div>
                 <img
                   src={post.thumbnail}

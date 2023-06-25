@@ -17,14 +17,23 @@ export default function Featured({}: Props) {
         </h2>
         <div className="flex flex-col gap-4 mt-10">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            quibusdam voluptatem eaque hic corrupti asperiores placeat, quas
-            pariatur, magnam voluptatum recusandae quia? Quam possimus error
-            pariatur necessitatibus consectetur aperiam. Odio!
+            Welcome to Keep Blog, your go-to destination for insightful articles
+            and valuable information. sharing knowledge it's very useful to make
+            a community of passionate programmers. We will share articles in
+            order to helping you stay up-to-date with the latest trends. You can
+            subscribe to the newletters, spam free, and unsubcribe when you
+            want. <b className="text-[#6BAFC6]">Keep</b> going!.
           </p>
-          <div className="flex gap-4 items-center">
-            <p>Subscribe to the newletter!</p>
-            <button className="btn btn-primary flex gap-2 items-center">
+          <p>Subscribe to the newletter!</p>
+          <div className="flex gap-4 items-center ">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Insert your email"
+              className="bg-gray-900 p-3 rounded-sm text-sm"
+            />
+            <button className="btn btn-primary flex gap-2 items-center ">
               <BsMailbox className="font-bold" />
               Subscribe
             </button>

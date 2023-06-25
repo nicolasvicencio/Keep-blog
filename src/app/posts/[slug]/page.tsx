@@ -13,7 +13,7 @@ export default function page({ params }: Props) {
 
   return (
     <div>
-      <div className="w-[90%] mx-auto min-h-screen h-full flex gap-10 items-start">
+      <div className="w-[70%] mx-auto min-h-screen h-full flex gap-10 items-start">
         <article className="prose flex flex-col items-center gap-10 mt-10 ">
           <div className="text-start">
             <h1 className="post-title ">{postContent.data.title}</h1>
@@ -23,10 +23,9 @@ export default function page({ params }: Props) {
             </span>
           </div>
           <div className="flex gap-4">
-            <IndexContent slug={params.slug}/>
             <Markdown
               options={{ forceBlock: true }}
-              className="article p-6 w-[60%]"
+              className="article p-6 w-[80%]"
             >
               {postContent.content}
             </Markdown>

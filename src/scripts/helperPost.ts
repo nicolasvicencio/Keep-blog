@@ -17,7 +17,10 @@ export function getPostMetadata(): PostMetadata[] {
       slug: fileName.replace(".md", ""),
     };
   });
-  return posts;
+  const sortedPost = posts.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+  return sortedPost;
 }
 
 export function getPostContent(slug: string) {
@@ -28,9 +31,13 @@ export function getPostContent(slug: string) {
 }
 
 export function getPostLinks(slug: string) {
-  const file = `${postFolder}/${slug}.md`
-  const contentFile = fs.readFileSync(file, 'utf8')
-  const matterResult = matter(contentFile)
-  const filterLinks = matterResult.content.matchAll(/###/g) 
-  console.log(filterLinks)
+  const file = `${postFolder}/${slug}.md`;
+  const contentFile = fs.readFileSync(file, "utf8");
+  const matterResult = matter(contentFile);
+  const links = matterResult.content
+    .split("\n")
+    .filter((el) => el.includes("##"))
+    .map((el) => el.replace("##", ""))
+    .map((el) => el.replace("#", ""));
+  return links;
 }

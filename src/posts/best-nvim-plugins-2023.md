@@ -7,7 +7,7 @@ thumbnail: "https://picsum.photos/630/360"
 
 Neovim is a highly customizable and powerful text editor that serves as a modern alternative to the classic Vim editor.
 It aims to improve upon Vim's functionalities while maintaining compatibility with its keybindings and scripting capabilities.
-Neovim is designed to enhance the editing experience for developers, programmers, and power users.  
+Neovim is designed to enhance the editing experience for developers, programmers, and power users.
 
 ### Why I should use neovim?
 
@@ -41,23 +41,21 @@ brew install neovim
 ```
 sudo apt install neovim
 ```
+
 ### Arch based distros
 
 ```
-sudo pacman -S neovim 
+sudo pacman -S neovim
 ```
+
 ### Fedora
 
 ```
 sudo dnf install -y neovim python3-neovim
 ```
 
-# Plugins
+## Plugins
 
 ### Telescope.nvim
 
 [ Telescope.nvim ]('https://github.com/nvim-telescope/telescope.nvim') its an amazing plugin that allows you to move between your projects files in supersonic speed.
-
-
-
-

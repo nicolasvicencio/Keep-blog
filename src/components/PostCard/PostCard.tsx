@@ -21,7 +21,7 @@ export default function PostCard({ post }: Props) {
       <h3 className="pt-2 text-xl font-bold">{post.title}</h3>
       <p className="py-2">{post.subtitle}</p>
       <div className="flex justify-between items-center my-2">
-        <p className="flex items-center gap-1">
+        <p className="flex items-center gap-1 hover:text-pink-500">
           Read more <AiOutlineArrowRight />
         </p>
       </div>
