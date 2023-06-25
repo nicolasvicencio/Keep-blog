@@ -13,7 +13,7 @@ export default function page({ params }: Props) {
 
   return (
     <div>
-      <div className="w-[70%] mx-auto min-h-screen h-full flex gap-10 items-start">
+      <div className="mb-36 mt-10 w-[70%] mx-auto min-h-screen h-full flex gap-10 items-start">
         <article className="prose flex flex-col items-center gap-10 mt-10 ">
           <div className="text-start">
             <h1 className="post-title ">{postContent.data.title}</h1>
