@@ -14,7 +14,7 @@ export default function SideNav({}: Props) {
       <nav>
         <ul>
           {postMetadata.map((post) => (
-            <li className="rounded-s my-4 hover:text-pink-400">
+            <li key={post.slug} className="rounded-s my-4 hover:text-pink-400">
               <Link key={post.slug} href={`${post.slug}`}>
                 <div className="flex flex-col">
                   <span className="text-xs text-gray-600">

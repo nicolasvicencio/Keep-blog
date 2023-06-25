@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { BsMailbox } from "react-icons/bs";
 type Props = {};
@@ -18,10 +19,10 @@ export default function Featured({}: Props) {
         <div className="flex flex-col gap-4 mt-10">
           <p>
             Welcome to Keep Blog, your go-to destination for insightful articles
-            and valuable information. sharing knowledge it's very useful to make
-            a community of passionate programmers. We will share articles in
-            order to helping you stay up-to-date with the latest trends. You can
-            subscribe to the newletters, spam free, and unsubcribe when you
+            and valuable information. sharing knowledge it is very useful to
+            make a community of passionate programmers. We will share articles
+            in order to helping you stay up-to-date with the latest trends. You
+            can subscribe to the newletters, spam free, and unsubcribe when you
             want. <b className="text-[#6BAFC6]">Keep</b> going!.
           </p>
           <p>Subscribe to the newletter!</p>
@@ -41,7 +42,13 @@ export default function Featured({}: Props) {
         </div>
       </div>
       <div className="w-[50%] flex justify-center items-center">
-        <img src="/programming.png" alt="programming icon" className="w-3/5" />
+        <Image
+          src="/programming.png"
+          alt="programming icon"
+          className="w-3/5"
+          width={100}
+          height={100}
+        />
       </div>
     </div>
   );

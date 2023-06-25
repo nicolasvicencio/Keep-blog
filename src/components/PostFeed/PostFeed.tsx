@@ -23,6 +23,7 @@ export default function PostFeed({}: Props) {
           if (_i >= 3) {
             return (
               <Link
+                key={post.slug}
                 href={`posts/${post.slug}`}
                 className="flex justify-between items-center border-y border-y-gray-900 p-4"
               >
