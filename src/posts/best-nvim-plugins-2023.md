@@ -2,8 +2,10 @@
 title: "My essentials neovim plugins 2023"
 subtitle: "These are the most usefull plugins for neovim, to finally move out from vscode."
 date: "2023-06-16"
-thumbnail: "https://picsum.photos/630/360"
+thumbnail: "thumbnails/nvim-essentials-plugins.png"
 ---
+
+![thumbnails/nvim-essentials-plugins](/thumbnails/nvim-essentials-plugins.png)
 
 Neovim is a highly customizable and powerful text editor that serves as a modern alternative to the classic Vim editor.
 It aims to improve upon Vim's functionalities while maintaining compatibility with its keybindings and scripting capabilities.

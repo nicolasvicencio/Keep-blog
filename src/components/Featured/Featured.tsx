@@ -45,7 +45,7 @@ export default function Featured({}: Props) {
         <Image
           src="/programming.png"
           alt="programming icon"
-          className="w-3/5"
+          className="w-3/5 "
           width={100}
           height={100}
         />
