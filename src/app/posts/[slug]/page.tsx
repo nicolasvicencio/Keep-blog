@@ -13,7 +13,7 @@ export default function page({ params }: Props) {
 
   return (
     <div>
-      <div className="mb-36 mt-10 w-[70%] mx-auto min-h-screen h-full flex gap-10 items-start">
+      <div className="mb-36 mt-10 md:w-[70%] mx-auto min-h-screen h-full flex gap-10 items-start ">
         <article className="prose flex flex-col items-center gap-10 mt-10 ">
           <div className="text-start">
             <h1 className="post-title ">{postContent.data.title}</h1>
@@ -22,7 +22,7 @@ export default function page({ params }: Props) {
               {parseDate(postContent.data.date)}
             </span>
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-col gap-4 lg:flex-row">
             <Markdown
               options={{ forceBlock: true }}
               className="article p-6 w-[80%]"
