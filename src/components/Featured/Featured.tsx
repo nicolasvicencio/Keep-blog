@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { BsMailbox } from "react-icons/bs";
 type Props = {};
@@ -42,13 +41,7 @@ export default function Featured({}: Props) {
         </div>
       </div>
       <div className="w-[50%] flex justify-center items-center">
-        <Image
-          src="/programming.png"
-          alt="programming icon"
-          className="w-3/5 "
-          width={100}
-          height={100}
-        />
+        <img src="/programming.png" alt="programming icon" className="w-3/5 " />
       </div>
     </div>
   );
