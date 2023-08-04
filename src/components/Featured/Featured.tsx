@@ -4,7 +4,7 @@ type Props = {};
 
 export default function Featured({}: Props) {
   return (
-    <div className="flex flex-col-reverse items-center gap-4 h-screen md:flex-row">
+    <div className="flex flex-col-reverse items-center gap-4 h-[80vh] md:flex-row">
       <div className="flex flex-col gap-4 justify-center lg:w-[50%]">
         <h2 className="text-6xl">
           Keep <span className="highlight">Learning</span>
@@ -17,25 +17,26 @@ export default function Featured({}: Props) {
         </h2>
         <div className="flex flex-col gap-4 mt-10">
           <p>
-            Welcome to Keep Blog, your go-to destination for insightful articles
-            and valuable information. sharing knowledge it is very useful to
-            make a community of passionate programmers. We will share articles
-            in order to helping you stay up-to-date with the latest trends. You
-            can subscribe to the newletters, spam free, and unsubcribe when you
-            want. <b className="text-[#6BAFC6]">Keep</b> going!.
+            Bienvenido a Keep Blog, el mejor lugar para encontrar artículos
+            interesantes e información valiosa. Compartir conocimientos es muy
+            útil para formar una comunidad de programadores apasionados.
+            Compartiremos artículos para ayudarte a estar al día de las últimas
+            tendencias. Puedes suscribirte al newsletter, sin spam, y puedes
+            darte de baja cuando quieras.
+            <b className="text-[#6BAFC6]">Keep</b> going!.
           </p>
-          <p>Subscribe to the newletter!</p>
+          <p>Subscribete a la newletter!</p>
           <div className="flex gap-4 items-center ">
             <input
               type="text"
               name=""
               id=""
-              placeholder="Insert your email"
+              placeholder="Ingresa tu email"
               className="bg-gray-900 p-3 rounded-sm text-sm"
             />
             <button className="btn btn-primary flex gap-2 items-center ">
               <BsMailbox className="font-bold" />
-              Subscribe
+              Suscribirse
             </button>
           </div>
         </div>

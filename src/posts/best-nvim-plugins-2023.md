@@ -7,28 +7,25 @@ thumbnail: "thumbnails/nvim-essentials-plugins.png"
 
 ![thumbnails/nvim-essentials-plugins](/thumbnails/nvim-essentials-plugins.png)
 
-Neovim is a highly customizable and powerful text editor that serves as a modern alternative to the classic Vim editor.
-It aims to improve upon Vim's functionalities while maintaining compatibility with its keybindings and scripting capabilities.
-Neovim is designed to enhance the editing experience for developers, programmers, and power users.
+Neovim es un editor de texto altamente personalizable y potente que sirve como alternativa moderna al clásico editor Vim. Su objetivo es mejorar las funcionalidades de Vim manteniendo la compatibilidad con sus combinaciones de teclas y capacidades de scripting. Neovim está diseñado para mejorar la experiencia de edición de desarrolladores, programadores y usuarios avanzados.
 
-### Why I should use neovim?
+### Por que deberia usar NeoVim?
 
-There no best thing to were writing code for longs periods of time without touching the mouse, it's simply more fast and fun!.
-Visual Studio Code its great but after some time, it can became very boring.
+No hay nada mejor que estar escribiendo código durante largos periodos de tiempo sin tocar el ratón, simplemente es más rápido y divertido. Visual Studio Code es genial, pero después de algún tiempo, puede llegar a ser muy aburrido.
 
-Advantages
+Ventagas
 
-- It's Fun!
-- In due time you become more fast!
-- Highly customizable
+- Es divertido!
+- En el debido tiempo puedes programar mas rapido
+- Altamente customizable
 
-## Intalling neovim
+## Instalar neovim
 
-To install neovim you can use the following commands:
+Para instalar neovim puede utilizar los siguientes comandos:
 
 ### Windows
 
-With chocolatey
+Con chocolatey
 
 ```
 choco install neovim
@@ -36,21 +33,21 @@ choco install neovim
 
 ### MacOs
 
-With homebrew
+Con homebrew
 
 ```
 brew install neovim
 ```
 
-## Linux distributions
+## Distribuciones Linux
 
-#### Debian and Ubuntu based distros
+#### Distros basadas en Debian y Ubuntu
 
 ```
 sudo apt install neovim
 ```
 
-#### Arch based distros
+#### Distros basadas en Arch
 
 ```
 sudo pacman -S neovim
@@ -68,49 +65,46 @@ sudo dnf install -y neovim python3-neovim
 
 ![images/telescope-plugin](/images/telescope-plugin.png)
 
-[ Telescope.nvim ]('https://github.com/nvim-telescope/telescope.nvim') its an amazing plugin that allows you to move between your projects files in supersonic speed.
-you can also grep text, navigate between buffers, view commits, go to definitions, view instances, etc. You must have this plugin in your workflow.
+[ Telescope.nvim ]('https://github.com/nvim-telescope/telescope.nvim') es un plugin increíble que te permite moverte entre los archivos de tus proyectos a una velocidad supersónica. también puedes buscar texto, navegar entre buffers, ver commits, ir a definiciones, ver instancias, etc. Definitivamente debes tener este plugin en tu flujo de trabajo.
 
-> If you wanna use grep finder you must install `ripgrep`
+> Si quieres utilizar la funcionalidad de grep finder debes instalar `ripgrep`
 
 ### LazyGit
 
 ![images/lazygit](/images/lazygit-plugin.png)
 
-[Lazy Git]('https://github.com/kdheepak/lazygit.nvim') Lazy Git it's simple terminal UI for git commands, written in Go with the [gocui]('https://github.com/jroimartin/gocui')
-library. If you like the git implementations of VSCode Lazy git provide you that and much more.. and faster.
+[Lazy Git]('https://github.com/kdheepak/lazygit.nvim') Lazy Git es un simple terminal UI para comandos git, escrito en Go con la librería [gocui]('https://github.com/jroimartin/gocui')
+. Si te gustan las implementaciones git de VSCode Lazy git te proporciona eso y mucho más.. y más rápido.
 
 ### Vim Visual Multi
 
 ![images/multi-plugin](/images/multi-plugin.png)
 
-[Vim Visual Multi]('https://github.com/mg979/vim-visual-multi') It's called vim-visual-multi in analogy with visual-block, but the plugin works mostly from normal mode.
-It allows you to generate multiple cursors and select same words in the file.
+[Vim Visual Multi]('https://github.com/mg979/vim-visual-multi') Se llama vim-visual-multi en analogía con visual-block, pero el plugin funciona principalmente en modo normal. Te permite generar múltiples cursores y seleccionar las mismas palabras en el archivo.
 
 ### Nvim Treesitter
 
 ![images/treesitter-plugin](/images/treesitter-plugin.png)
 
-The goal of [nvim-treesitter]('nvim-treesitter/nvim-treesitter') is both to provide a simple and easy way to use the interface for [tree-sitter]('https://github.com/tree-sitter/tree-sitter')
-in Neovim and to provide some basic functionality such as highlighting your code and make it prettier!
+El objetivo de [nvim-treesitter]('nvim-treesitter/nvim-treesitter') es tanto proporcionar una forma simple y fácil de utilizar la interfaz para [tree-sitter]('https://github.com/tree-sitter/tree-sitter') en Neovim como proporcionar algunas funcionalidades básicas como resaltar tu código y ¡hacerlo más bonito!
 
 ### Surround.vim
 
-This is simple but really useful. [Surround.vim]('https://github.com/tpope/vim-surround') is all about "surroundings": parentheses, brackets, quotes, XML tags, and more. The plugin provides mappings to easily delete, change and add such surroundings in pairs.
+Surround es simple pero realmente útil. [Surround.vim]('https://github.com/tpope/vim-surround') es todo sobre "surrounds": paréntesis, corchetes, comillas, etiquetas XML, y más. El plugin proporciona mapeados para eliminar, cambiar y añadir fácilmente dichos alrededores de dos en dos.
 
-For example if we have this string
+Por ejemplo si tenemos este string:
 
 ```
 "Vim is amazing!"
 ```
 
-With `cs"'` chages to
+Con `cs"'` lo cambia a
 
 ```
 'Vim is amazing!'
 ```
 
-If you wanna surround the string with { } go to select mode and press `S{`
+Si quires encerrar la cadena con { } ve a modo seleccion y presiona `S{`
 
 ```
 {'Vim is amazing!'}
