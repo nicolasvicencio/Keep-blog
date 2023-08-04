@@ -10,7 +10,7 @@ export default function SideNav({}: Props) {
 
   return (
     <aside className=" h-auto p-4 lg:w-[20%] text-gray-500">
-      <h3 className="text-xl border-[#6BAFC6] border-b">Lastest posts</h3>
+      <h3 className="text-xl border-[#6BAFC6] border-b">Ultimos posts</h3>
       <nav>
         <ul>
           {postMetadata.map((post) => (

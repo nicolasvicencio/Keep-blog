@@ -1,6 +1,6 @@
 ---
-title: "My essentials neovim plugins 2023"
-subtitle: "These are the most usefull plugins for neovim, to finally move out from vscode."
+title: "Plugins esenciales para neovim este 2023"
+subtitle: "Estos son los mejores plugines para neovim para soltar de una vez por todas Visual Studio Code"
 date: "2023-06-16"
 thumbnail: "thumbnails/nvim-essentials-plugins.png"
 ---
